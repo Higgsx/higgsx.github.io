@@ -2,38 +2,38 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title></title>
-    <link>//localhost:1313/</link>
+    <link>http://localhost:1313/</link>
     <description>Recent content on </description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en</language>
     <lastBuildDate>Sat, 06 Apr 2024 11:15:32 -0400</lastBuildDate>
-    <atom:link href="//localhost:1313/index.xml" rel="self" type="application/rss+xml" />
+    <atom:link href="http://localhost:1313/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>Dpapi Decryption</title>
-      <link>//localhost:1313/posts/dpapi-decryption/</link>
+      <link>http://localhost:1313/posts/dpapi-decryption/</link>
       <pubDate>Sat, 06 Apr 2024 11:15:32 -0400</pubDate>
-      <guid>//localhost:1313/posts/dpapi-decryption/</guid>
+      <guid>http://localhost:1313/posts/dpapi-decryption/</guid>
       <description>Introduction&#xA;DPAPI stands for Data Protection API and was introducted by microsoft in Windows 2000 and since then it is used heavily by windows even if you aren’t aware of it. Simply put, DPAPI lets you encrypt/decrypt data. You don’t need to worry about encryption keys at all.&#xA;DPAPI has 2 simple API:&#xA;CryptProtectData() CryptUnprotectData()&#xA;As you might already guessed it:&#xA;For encryption you use CryptProtectData()&#xA;For decryption you use CryptUnprotectData()</description>
     </item>
     <item>
       <title>Crtp Review</title>
-      <link>//localhost:1313/posts/crtp-review/</link>
+      <link>http://localhost:1313/posts/crtp-review/</link>
       <pubDate>Sat, 06 Apr 2024 10:53:10 -0400</pubDate>
-      <guid>//localhost:1313/posts/crtp-review/</guid>
+      <guid>http://localhost:1313/posts/crtp-review/</guid>
       <description>Introduction&#xA;Before starting HackTheBox Offshore I needed some background on attacking Active Directory environment. I had had some sysadmin experience in AD and it was time to going through penetration testing course focused on Active Directory. I had already heard about PentesterAcademy training course (Attacking and Defending Active Directory) and didn’t spend time on searching much back then and immediately purchased this course which is accompanying training course for CRTP examination.</description>
     </item>
     <item>
       <title>Backdoor Adminsdholder</title>
-      <link>//localhost:1313/posts/backdoor-adminsdholder/</link>
+      <link>http://localhost:1313/posts/backdoor-adminsdholder/</link>
       <pubDate>Sat, 06 Apr 2024 10:44:04 -0400</pubDate>
-      <guid>//localhost:1313/posts/backdoor-adminsdholder/</guid>
+      <guid>http://localhost:1313/posts/backdoor-adminsdholder/</guid>
       <description>In a red team operation when we gain Domain Admin privileges, we want to make sure we will have access to the environment even though system administrators or blue teamers notice it. In Active Directory environment amount of TTPs (Techniques, Tactics, Procedures) for persistence is huge. One common way to persist is to use AdminSDHolder container, which is in System container&#xA;Every 60 minutes SDPropagator in AD, will overwrite Protected groups ACL with AdminSDHolder ACL.</description>
     </item>
     <item>
       <title>Htb Offshore</title>
-      <link>//localhost:1313/posts/htb-offshore/</link>
+      <link>http://localhost:1313/posts/htb-offshore/</link>
       <pubDate>Sat, 06 Apr 2024 10:39:34 -0400</pubDate>
-      <guid>//localhost:1313/posts/htb-offshore/</guid>
+      <guid>http://localhost:1313/posts/htb-offshore/</guid>
       <description>Introduction&#xA;At the beginning, HackTheBox was platform known for just a single box exercises but it evolved a lot and become one of the best platform for honing your cyber security skills and tradecraft.&#xA;One of the best feature of this platform is its prolabs&#xA;Dante Offshore RastaLabs Cybernetics APTLabs Prolabs are huge labs composed of several domains and forests, spanned across different subnets and each one of them varies by difficulty and sizes.</description>
     </item>
   </channel>
