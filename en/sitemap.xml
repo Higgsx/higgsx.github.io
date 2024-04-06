@@ -2,66 +2,66 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
   xmlns:xhtml="http://www.w3.org/1999/xhtml">
   <url>
-    <loc>http://localhost:1313/</loc>
+    <loc>https://higgsx.github.io/</loc>
     <lastmod>2024-04-06T11:15:32-04:00</lastmod>
     <xhtml:link
                 rel="alternate"
                 hreflang="ka"
-                href="http://localhost:1313/ka/"
+                href="https://higgsx.github.io/ka/"
                 />
     <xhtml:link
                 rel="alternate"
                 hreflang="en"
-                href="http://localhost:1313/"
+                href="https://higgsx.github.io/"
                 />
   </url><url>
-    <loc>http://localhost:1313/posts/dpapi-decryption/</loc>
+    <loc>https://higgsx.github.io/posts/dpapi-decryption/</loc>
     <lastmod>2024-04-06T11:15:32-04:00</lastmod>
   </url><url>
-    <loc>http://localhost:1313/posts/</loc>
+    <loc>https://higgsx.github.io/posts/</loc>
     <lastmod>2024-04-06T11:15:32-04:00</lastmod>
     <xhtml:link
                 rel="alternate"
                 hreflang="ka"
-                href="http://localhost:1313/ka/posts/"
+                href="https://higgsx.github.io/ka/posts/"
                 />
     <xhtml:link
                 rel="alternate"
                 hreflang="en"
-                href="http://localhost:1313/posts/"
+                href="https://higgsx.github.io/posts/"
                 />
   </url><url>
-    <loc>http://localhost:1313/posts/crtp-review/</loc>
+    <loc>https://higgsx.github.io/posts/crtp-review/</loc>
     <lastmod>2024-04-06T10:53:10-04:00</lastmod>
   </url><url>
-    <loc>http://localhost:1313/posts/backdoor-adminsdholder/</loc>
+    <loc>https://higgsx.github.io/posts/backdoor-adminsdholder/</loc>
     <lastmod>2024-04-06T10:44:04-04:00</lastmod>
   </url><url>
-    <loc>http://localhost:1313/posts/htb-offshore/</loc>
+    <loc>https://higgsx.github.io/posts/htb-offshore/</loc>
     <lastmod>2024-04-06T10:39:34-04:00</lastmod>
   </url><url>
-    <loc>http://localhost:1313/series/</loc>
+    <loc>https://higgsx.github.io/series/</loc>
     <xhtml:link
                 rel="alternate"
                 hreflang="ka"
-                href="http://localhost:1313/ka/series/"
+                href="https://higgsx.github.io/ka/series/"
                 />
     <xhtml:link
                 rel="alternate"
                 hreflang="en"
-                href="http://localhost:1313/series/"
+                href="https://higgsx.github.io/series/"
                 />
   </url><url>
-    <loc>http://localhost:1313/tags/</loc>
+    <loc>https://higgsx.github.io/tags/</loc>
     <xhtml:link
                 rel="alternate"
                 hreflang="ka"
-                href="http://localhost:1313/ka/tags/"
+                href="https://higgsx.github.io/ka/tags/"
                 />
     <xhtml:link
                 rel="alternate"
                 hreflang="en"
-                href="http://localhost:1313/tags/"
+                href="https://higgsx.github.io/tags/"
                 />
   </url>
 </urlset>

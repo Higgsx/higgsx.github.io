@@ -2,66 +2,66 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
   xmlns:xhtml="http://www.w3.org/1999/xhtml">
   <url>
-    <loc>http://localhost:1313/ka/</loc>
+    <loc>https://higgsx.github.io/ka/</loc>
     <lastmod>2024-04-06T10:00:58-04:00</lastmod>
     <xhtml:link
                 rel="alternate"
                 hreflang="en"
-                href="http://localhost:1313/"
+                href="https://higgsx.github.io/"
                 />
     <xhtml:link
                 rel="alternate"
                 hreflang="ka"
-                href="http://localhost:1313/ka/"
+                href="https://higgsx.github.io/ka/"
                 />
   </url><url>
-    <loc>http://localhost:1313/ka/posts/inject-shellcode/</loc>
+    <loc>https://higgsx.github.io/ka/posts/inject-shellcode/</loc>
     <lastmod>2024-04-06T10:00:58-04:00</lastmod>
   </url><url>
-    <loc>http://localhost:1313/ka/posts/</loc>
+    <loc>https://higgsx.github.io/ka/posts/</loc>
     <lastmod>2024-04-06T10:00:58-04:00</lastmod>
     <xhtml:link
                 rel="alternate"
                 hreflang="en"
-                href="http://localhost:1313/posts/"
+                href="https://higgsx.github.io/posts/"
                 />
     <xhtml:link
                 rel="alternate"
                 hreflang="ka"
-                href="http://localhost:1313/ka/posts/"
+                href="https://higgsx.github.io/ka/posts/"
                 />
   </url><url>
-    <loc>http://localhost:1313/ka/posts/domain-persistence-1/</loc>
+    <loc>https://higgsx.github.io/ka/posts/domain-persistence-1/</loc>
     <lastmod>2024-04-06T09:34:15-04:00</lastmod>
   </url><url>
-    <loc>http://localhost:1313/ka/posts/attacking-forest/</loc>
+    <loc>https://higgsx.github.io/ka/posts/attacking-forest/</loc>
     <lastmod>2023-06-05T01:38:06+04:00</lastmod>
   </url><url>
-    <loc>http://localhost:1313/ka/posts/amsi-inmemory-patching/</loc>
+    <loc>https://higgsx.github.io/ka/posts/amsi-inmemory-patching/</loc>
     <lastmod>2023-03-07T01:38:06+04:00</lastmod>
   </url><url>
-    <loc>http://localhost:1313/ka/series/</loc>
+    <loc>https://higgsx.github.io/ka/series/</loc>
     <xhtml:link
                 rel="alternate"
                 hreflang="en"
-                href="http://localhost:1313/series/"
+                href="https://higgsx.github.io/series/"
                 />
     <xhtml:link
                 rel="alternate"
                 hreflang="ka"
-                href="http://localhost:1313/ka/series/"
+                href="https://higgsx.github.io/ka/series/"
                 />
   </url><url>
-    <loc>http://localhost:1313/ka/tags/</loc>
+    <loc>https://higgsx.github.io/ka/tags/</loc>
     <xhtml:link
                 rel="alternate"
                 hreflang="en"
-                href="http://localhost:1313/tags/"
+                href="https://higgsx.github.io/tags/"
                 />
     <xhtml:link
                 rel="alternate"
                 hreflang="ka"
-                href="http://localhost:1313/ka/tags/"
+                href="https://higgsx.github.io/ka/tags/"
                 />
   </url>
 </urlset>
