@@ -2,66 +2,66 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
   xmlns:xhtml="http://www.w3.org/1999/xhtml">
   <url>
-    <loc>https://higgsx.github.io/ka/</loc>
+    <loc>https://redsecx.com/ka/</loc>
     <lastmod>2024-04-06T10:00:58-04:00</lastmod>
     <xhtml:link
                 rel="alternate"
                 hreflang="en"
-                href="https://higgsx.github.io/"
+                href="https://redsecx.com/"
                 />
     <xhtml:link
                 rel="alternate"
                 hreflang="ka"
-                href="https://higgsx.github.io/ka/"
+                href="https://redsecx.com/ka/"
                 />
   </url><url>
-    <loc>https://higgsx.github.io/ka/posts/inject-shellcode/</loc>
+    <loc>https://redsecx.com/ka/posts/inject-shellcode/</loc>
     <lastmod>2024-04-06T10:00:58-04:00</lastmod>
   </url><url>
-    <loc>https://higgsx.github.io/ka/posts/</loc>
+    <loc>https://redsecx.com/ka/posts/</loc>
     <lastmod>2024-04-06T10:00:58-04:00</lastmod>
     <xhtml:link
                 rel="alternate"
                 hreflang="en"
-                href="https://higgsx.github.io/posts/"
+                href="https://redsecx.com/posts/"
                 />
     <xhtml:link
                 rel="alternate"
                 hreflang="ka"
-                href="https://higgsx.github.io/ka/posts/"
+                href="https://redsecx.com/ka/posts/"
                 />
   </url><url>
-    <loc>https://higgsx.github.io/ka/posts/domain-persistence-1/</loc>
+    <loc>https://redsecx.com/ka/posts/domain-persistence-1/</loc>
     <lastmod>2024-04-06T09:34:15-04:00</lastmod>
   </url><url>
-    <loc>https://higgsx.github.io/ka/posts/attacking-forest/</loc>
+    <loc>https://redsecx.com/ka/posts/attacking-forest/</loc>
     <lastmod>2023-06-05T01:38:06+04:00</lastmod>
   </url><url>
-    <loc>https://higgsx.github.io/ka/posts/amsi-inmemory-patching/</loc>
+    <loc>https://redsecx.com/ka/posts/amsi-inmemory-patching/</loc>
     <lastmod>2023-03-07T01:38:06+04:00</lastmod>
   </url><url>
-    <loc>https://higgsx.github.io/ka/series/</loc>
+    <loc>https://redsecx.com/ka/series/</loc>
     <xhtml:link
                 rel="alternate"
                 hreflang="en"
-                href="https://higgsx.github.io/series/"
+                href="https://redsecx.com/series/"
                 />
     <xhtml:link
                 rel="alternate"
                 hreflang="ka"
-                href="https://higgsx.github.io/ka/series/"
+                href="https://redsecx.com/ka/series/"
                 />
   </url><url>
-    <loc>https://higgsx.github.io/ka/tags/</loc>
+    <loc>https://redsecx.com/ka/tags/</loc>
     <xhtml:link
                 rel="alternate"
                 hreflang="en"
-                href="https://higgsx.github.io/tags/"
+                href="https://redsecx.com/tags/"
                 />
     <xhtml:link
                 rel="alternate"
                 hreflang="ka"
-                href="https://higgsx.github.io/ka/tags/"
+                href="https://redsecx.com/ka/tags/"
                 />
   </url>
 </urlset>

@@ -56,11 +56,11 @@
 
 <!-- Open Graph image and Twitter Card metadata -->
 
-<title itemprop="name">Redsec - Backdoor Adminsdholder</title>
-<meta property="og:title" content=Redsec&#32;-&#32;Backdoor&#32;Adminsdholder />
-<meta name="twitter:title" content=Redsec&#32;-&#32;Backdoor&#32;Adminsdholder />
-<meta itemprop="name" content=Redsec&#32;-&#32;Backdoor&#32;Adminsdholder />
-<meta name="application-name" content=Redsec&#32;-&#32;Backdoor&#32;Adminsdholder />
+<title itemprop="name">Redsec - Dancing with PEB: change CommandLine</title>
+<meta property="og:title" content=Redsec&#32;-&#32;Dancing&#32;with&#32;PEB:&#32;change&#32;CommandLine />
+<meta name="twitter:title" content=Redsec&#32;-&#32;Dancing&#32;with&#32;PEB:&#32;change&#32;CommandLine />
+<meta itemprop="name" content=Redsec&#32;-&#32;Dancing&#32;with&#32;PEB:&#32;change&#32;CommandLine />
+<meta name="application-name" content=Redsec&#32;-&#32;Dancing&#32;with&#32;PEB:&#32;change&#32;CommandLine />
 <meta property="og:site_name" content="" />
 
 
@@ -70,14 +70,14 @@
 <meta name="twitter:description" content="" />
 
 
-<base href="https://redsecx.com/posts/backdoor-adminsdholder/" />
-<link rel="canonical" href="https://redsecx.com/posts/backdoor-adminsdholder/" itemprop="url" />
-<meta name="url" content="https://redsecx.com/posts/backdoor-adminsdholder/" />
-<meta name="twitter:url" content="https://redsecx.com/posts/backdoor-adminsdholder/" />
-<meta property="og:url" content="https://redsecx.com/posts/backdoor-adminsdholder/" />
+<base href="https://redsecx.com/posts/change_cmdline_string/" />
+<link rel="canonical" href="https://redsecx.com/posts/change_cmdline_string/" itemprop="url" />
+<meta name="url" content="https://redsecx.com/posts/change_cmdline_string/" />
+<meta name="twitter:url" content="https://redsecx.com/posts/change_cmdline_string/" />
+<meta property="og:url" content="https://redsecx.com/posts/change_cmdline_string/" />
 
 
-<meta property="og:updated_time" content="2024-04-06T10:44:04-04:00" />
+<meta property="og:updated_time" content="2024-04-09T09:50:51-04:00" />
 
 
 <link rel="sitemap" type="application/xml" title="Sitemap" href='https://redsecx.com/sitemap.xml' />
@@ -317,14 +317,14 @@ powered by <a target="_blank" href="https://gohugo.io">Hugo</a> | themed with <a
                 <div class="post">
   <div class="info">
   <h1 class="post-title">
-    <a href="https://redsecx.com/posts/backdoor-adminsdholder/">Backdoor Adminsdholder</a>
+    <a href="https://redsecx.com/posts/change_cmdline_string/">Dancing with PEB: change CommandLine</a>
   </h1>
 
   <div class="headline">
     <div>
       
-      <time datetime=" 2024-04-06T10:44:04-0400" class="post-date">
-        April 6, 2024
+      <time datetime=" 2024-04-09T09:50:51-0400" class="post-date">
+        April 9, 2024
       </time>
       
       <span> - </span>
@@ -333,7 +333,7 @@ powered by <a target="_blank" href="https://gohugo.io">Hugo</a> | themed with <a
           
         
 
-        <span>3 mins read</span>
+        <span>2 mins read</span>
       </span>
     </div>
 
@@ -346,63 +346,53 @@ powered by <a target="_blank" href="https://gohugo.io">Hugo</a> | themed with <a
   
 </div>
 
-  <p>In a red team operation when we gain Domain Admin privileges, we want to make sure we will have access to the environment even though system administrators or blue teamers notice it. In Active Directory environment amount of TTPs (Techniques, Tactics, Procedures) for persistence is huge. One common way to persist is to use AdminSDHolder container, which is in System container</p>
-<p><img src="/images/oldredsec/Untitled.png" alt="Untitled"></p>
-<p>Every 60 minutes SDPropagator in AD, will overwrite Protected groups ACL with AdminSDHolder ACL. In other words, if you change DACL of Domain Admins Group, it will be overwritten by SDProp every 1 hour.</p>
-<p>Many folks will change DACL of Domain Admins but there is high chance that someone will notice it. In case we change DACL of AdminSDHolder, even though administrator notices and changes DACL of DA, in 60 minutes Domain Admins DACL will be changed and will give you more time to move laterally.</p>
-<p>Note: For the following demonstrations I am using ZeroPointSecurity CRTO Lab.</p>
-<p>First, Let’s see what we can do if we have FullControl (same as GenericAll) over DA group.</p>
-<p>Create new user: panda</p>
-<p><img src="/images/oldredsec/Untitled%201.png" alt="Untitled"></p>
-<p>Test if we really have that user via ActiveDirectory module, installed default on every Domain Controller</p>
-<blockquote>
-<p>Get-ADUser Panda</p>
-</blockquote>
-<p><img src="/images/oldredsec/Untitled%202.png" alt="Untitled"></p>
-<p>and we want to give panda something powerful. Open Domain Admins group DACL or as everyone is familiar with: Permissions. We have DACL and SACL. DACL stands for: Discretionary Access Control List and SACL stands for: System Access Control List. SACL is for audit purposes but the blog post isn’t about that.</p>
-<p><img src="/images/oldredsec/Untitled%203.png" alt="Untitled"></p>
-<p>ACL is a list or chain of ACEs. ACEs at the upper level takes precedence over ACEs below.</p>
-<p>Click add to add our user panda to ACL</p>
-<p><img src="/images/oldredsec/Untitled%204.png" alt="Untitled"></p>
-<p>And give full permission (Full Control) also known as GenericAll</p>
-<p><img src="/images/oldredsec/Untitled%205.png" alt="Untitled"></p>
-<p>and we see listed here</p>
-<p><img src="/images/oldredsec/Untitled%206.png" alt="Untitled"></p>
-<p>Now that panda has Full Access to this group we can add users to this group or change properties of DA group.</p>
-<p><img src="/images/oldredsec/Untitled%207.png" alt="Untitled"></p>
-<p>first, in order to make sure panda has full access to the group we can use powershell.</p>
-<blockquote>
-<p>Get-ACL -Path &ldquo;AD:CN=Domain Admins,CN=Users,DC=dev,DC=cyberbotic,DC=io&rdquo; | select -ExpandProperty Access</p>
-</blockquote>
-<p><img src="/images/oldredsec/Untitled%208.png" alt="Untitled"></p>
-<p><img src="/images/oldredsec/Untitled%209.png" alt="Untitled"></p>
-<p>now, execute powershell in a context of domain user: panda and try to add user to DA group</p>
-<p><img src="/images/oldredsec/Untitled%2010.png" alt="Untitled"></p>
-<p><img src="/images/oldredsec/Untitled%2011.png" alt="Untitled"></p>
-<p><img src="/images/oldredsec/Untitled%2012.png" alt="Untitled"></p>
-<p><img src="/images/oldredsec/Untitled%2013.png" alt="Untitled"></p>
-<p>After Deletion</p>
-<p><img src="/images/oldredsec/Untitled%2014.png" alt="Untitled"></p>
-<p>Important Note: just because you have GenericAll on Domain Admins group, doesn’t mean you can manipulate users enrolled in the group. So you can’t reset passwords of users within this group and etc.</p>
-<p>You can add your user temporarily and grant yourself DA privileges. But issue is that it isn’t permanent because as we said: AdminSDHolder. Every 60 minutes, SDPropagator propagates AdminSDHolder’s ACL into Protected Groups: Domain Admin Print Operators etc.</p>
-<p><img src="/images/oldredsec/Untitled.png" alt="Untitled"></p>
-<p>if you compare lets say DA group to adminsdholder group acls. they will be equal</p>
-<p><img src="/images/oldredsec/Untitled%2015.png" alt="Untitled"></p>
-<p>So in order to make smart move, you can add your new user to AdminSDHolder DACL and in 60 minutes you will be added to every protected groups such as Domain Admins, Print Operators, Backup Operators and etc.</p>
-<p>Many sysadmin aren’t aware of that feature, but are aware of membership of Domain Admins group. There is less chance of detection if the above mentioned container will be used to persistence.</p>
+  <p>I am taking Sektor7 Intermediate Malware Development training and as an exercise, I decided to create toy project which will go through all active processes and change their <code>CommandLine</code> parameter.</p>
+<p>First of all lets have a look at PEB structure of <code>notepad.exe</code> process:</p>
+<p><img src="/images/peb-images/1.png" alt="Untitled"></p>
+<p>Here, we are mapping _PEB structure fields to actual PEB structure in memory</p>
+<pre tabindex="0"><code>dt _PEB @$peb
+</code></pre><p>One of the structure field is ProcessParameters
+<img src="/images/peb-images/1.png" alt="Untitled"></p>
+<p>ProcessParameters is type of <code>_RTL_USER_PROCESS_PARAMETERS</code> and for our interests, we want CommandLine field
+<img src="/images/peb-images/3.png" alt="Untitled"></p>
+<p>CommandLine field is of type <code>_UNICODE_STRING</code> and contains 3 fields: <code>Length</code>, <code>MaximumLength</code> and <code>Buffer</code>
+<img src="/images/peb-images/4.png" alt="Untitled"></p>
+<p>Here, Buffer is unicode string and our objective is to change this to a unicode string we choose.</p>
+<p>code in a github is explained well, but lets sneak peek</p>
+<p>Here, we get a handle to remote process via <code>OpenProcess</code> WinAPI and request for <code>PROCESS_ALL_ACCESS</code></p>
+<p><img src="/images/peb-images/code-1.png" alt="Untitled"></p>
+<p>Here, we are requesting address of <code>NtQueryInformationProcess</code> and call this function to retreive PEB address of a remote process.
+Some may say why using <code>GetProcAddress</code> and <code>GetModuleHandle</code> do dynamically retrieve its address, but I had little conflict when I included <code>winternl.h</code>
+conflicts with <code>PEstructs.h</code>. So that&rsquo;s why I decided to dynamically resovle function address.</p>
+<p><img src="/images/peb-images/code-2.png" alt="Untitled"></p>
+<p>for such cases we need a function pointer declared before hand:</p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-c" data-lang="c"><span style="display:flex;"><span><span style="color:#66d9ef">typedef</span> <span style="color:#a6e22e">NTSTATUS</span> (<span style="color:#f92672">*</span>pNtQueryInformationProcess)(
+</span></span><span style="display:flex;"><span>  HANDLE           ProcessHandle,
+</span></span><span style="display:flex;"><span>  ULONG            ProcessInformationClass,
+</span></span><span style="display:flex;"><span>  PVOID            ProcessInformation,
+</span></span><span style="display:flex;"><span>  ULONG            ProcessInformationLength,
+</span></span><span style="display:flex;"><span>  PULONG           ReturnLength
+</span></span><span style="display:flex;"><span>);
+</span></span></code></pre></div><p>Now, we are overwriting CommandLine field and Length field.</p>
+<p><img src="/images/peb-images/code-3.png" alt="Untitled"></p>
+<p>Finally we compile with</p>
+<pre tabindex="0"><code>cl.exe /nologo /Ox /MT /W0 /GS- /DNDEBUG /Tp *.cpp /link /OUT:implant.exe /SUBSYSTEM:CONSOLE
+</code></pre><p><img src="/images/peb-images/5.png" alt="Untitled"></p>
+<p><img src="/images/peb-images/6.png" alt="Untitled"></p>
+<p><img src="/images/peb-images/7.png" alt="Untitled"></p>
+<p>Errors shown above is about permissions, we are getting because we don&rsquo;t have necessary process token (we are just regular user). In case you want to overwrite most of the process, just run as administrator or spawn cmd.exe via psexec</p>
+<p>Here we see overwritten commandlines of several processes shown via Process Hacker
+<img src="/images/peb-images/8.png" alt="Untitled"></p>
+<p>You can see this toy project on github: <a href="https://github.com/Higgsx/Toy_Project_CmdLine" target="_blank">Repository</a></p>
 
   
   <hr>
 <div class="footer">
     
 	    
-            <a class="previous-post" href="https://redsecx.com/posts/htb-offshore/?ref=footer"><span style="font-weight:bold;">« Previous</span><br>Htb Offshore</a>
+            <a class="previous-post" href="https://redsecx.com/posts/dpapi-decryption/?ref=footer"><span style="font-weight:bold;">« Previous</span><br>Dpapi Decryption</a>
         
 	    
-            <div class="next-post">
-                <a href="https://redsecx.com/posts/crtp-review/?ref=footer"><span style="font-weight:bold;">Next »</span><br>Crtp Review</a>
-            </div>
-        
     
 </div>
 

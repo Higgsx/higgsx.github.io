@@ -2,66 +2,69 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
   xmlns:xhtml="http://www.w3.org/1999/xhtml">
   <url>
-    <loc>https://higgsx.github.io/</loc>
-    <lastmod>2024-04-06T11:15:32-04:00</lastmod>
+    <loc>https://redsecx.com/</loc>
+    <lastmod>2024-04-09T09:50:51-04:00</lastmod>
     <xhtml:link
                 rel="alternate"
                 hreflang="ka"
-                href="https://higgsx.github.io/ka/"
+                href="https://redsecx.com/ka/"
                 />
     <xhtml:link
                 rel="alternate"
                 hreflang="en"
-                href="https://higgsx.github.io/"
+                href="https://redsecx.com/"
                 />
   </url><url>
-    <loc>https://higgsx.github.io/posts/dpapi-decryption/</loc>
-    <lastmod>2024-04-06T11:15:32-04:00</lastmod>
+    <loc>https://redsecx.com/posts/change_cmdline_string/</loc>
+    <lastmod>2024-04-09T09:50:51-04:00</lastmod>
   </url><url>
-    <loc>https://higgsx.github.io/posts/</loc>
-    <lastmod>2024-04-06T11:15:32-04:00</lastmod>
+    <loc>https://redsecx.com/posts/</loc>
+    <lastmod>2024-04-09T09:50:51-04:00</lastmod>
     <xhtml:link
                 rel="alternate"
                 hreflang="ka"
-                href="https://higgsx.github.io/ka/posts/"
+                href="https://redsecx.com/ka/posts/"
                 />
     <xhtml:link
                 rel="alternate"
                 hreflang="en"
-                href="https://higgsx.github.io/posts/"
+                href="https://redsecx.com/posts/"
                 />
   </url><url>
-    <loc>https://higgsx.github.io/posts/crtp-review/</loc>
+    <loc>https://redsecx.com/posts/dpapi-decryption/</loc>
+    <lastmod>2024-04-06T11:15:32-04:00</lastmod>
+  </url><url>
+    <loc>https://redsecx.com/posts/crtp-review/</loc>
     <lastmod>2024-04-06T10:53:10-04:00</lastmod>
   </url><url>
-    <loc>https://higgsx.github.io/posts/backdoor-adminsdholder/</loc>
+    <loc>https://redsecx.com/posts/backdoor-adminsdholder/</loc>
     <lastmod>2024-04-06T10:44:04-04:00</lastmod>
   </url><url>
-    <loc>https://higgsx.github.io/posts/htb-offshore/</loc>
+    <loc>https://redsecx.com/posts/htb-offshore/</loc>
     <lastmod>2024-04-06T10:39:34-04:00</lastmod>
   </url><url>
-    <loc>https://higgsx.github.io/series/</loc>
+    <loc>https://redsecx.com/series/</loc>
     <xhtml:link
                 rel="alternate"
                 hreflang="ka"
-                href="https://higgsx.github.io/ka/series/"
+                href="https://redsecx.com/ka/series/"
                 />
     <xhtml:link
                 rel="alternate"
                 hreflang="en"
-                href="https://higgsx.github.io/series/"
+                href="https://redsecx.com/series/"
                 />
   </url><url>
-    <loc>https://higgsx.github.io/tags/</loc>
+    <loc>https://redsecx.com/tags/</loc>
     <xhtml:link
                 rel="alternate"
                 hreflang="ka"
-                href="https://higgsx.github.io/ka/tags/"
+                href="https://redsecx.com/ka/tags/"
                 />
     <xhtml:link
                 rel="alternate"
                 hreflang="en"
-                href="https://higgsx.github.io/tags/"
+                href="https://redsecx.com/tags/"
                 />
   </url>
 </urlset>

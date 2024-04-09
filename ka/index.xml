@@ -2,39 +2,39 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title></title>
-    <link>https://higgsx.github.io/ka/</link>
+    <link>https://redsecx.com/ka/</link>
     <description>Recent content on </description>
     <generator>Hugo -- gohugo.io</generator>
     <language>ka</language>
     <lastBuildDate>Sat, 06 Apr 2024 10:00:58 -0400</lastBuildDate>
-    <atom:link href="https://higgsx.github.io/ka/index.xml" rel="self" type="application/rss+xml" />
+    <atom:link href="https://redsecx.com/ka/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>Inject Shellcode</title>
-      <link>https://higgsx.github.io/ka/posts/inject-shellcode/</link>
+      <link>https://redsecx.com/ka/posts/inject-shellcode/</link>
       <pubDate>Sat, 06 Apr 2024 10:00:58 -0400</pubDate>
-      <guid>https://higgsx.github.io/ka/posts/inject-shellcode/</guid>
+      <guid>https://redsecx.com/ka/posts/inject-shellcode/</guid>
       <description>მოგესალმებით&#xA;კიბერ-კრიმინალები ხშირად მიმართავენ მაკროებს MS Word ან MS Excell - ის დოკუმენტებში, თუმცა ნელ-ნელა ეს ტენდენცია იკლებს რადგანაც Microsoft - მა აკრძალა მაკროების გაშვება ისეთ ფაილებზე, რომლებიც ინტერნეტიდან არის გადმოწერილი.&#xA;დღევანდელ პოსტში ვისაუბრებთ მარტივ მაკროზე, რომლის მიზანიცაა MS Word - ის პროცესში Meterpreter Shellcode - ს ინექცია შემდეგი კლასიკური მეთოდით:&#xA;VirtualAlloc RtlMoveMemory CreateThread შენიშვნა: ეს პოსტიც და ყველა სხვა პოსტიც, ამ ბლოგზე არის მხოლოდ საგანმანათლებლო. ნებისმიერი არასანქცირებული ქმედება ისჯება კანონდებლობით.</description>
     </item>
     <item>
       <title>Domain Persistence 1</title>
-      <link>https://higgsx.github.io/ka/posts/domain-persistence-1/</link>
+      <link>https://redsecx.com/ka/posts/domain-persistence-1/</link>
       <pubDate>Sat, 06 Apr 2024 09:34:15 -0400</pubDate>
-      <guid>https://higgsx.github.io/ka/posts/domain-persistence-1/</guid>
+      <guid>https://redsecx.com/ka/posts/domain-persistence-1/</guid>
       <description>მოგესალმებით&#xA;krbtgt იუზერის ჰეში არის ძალიან,ძალიან მნიშვნელოვანი. თვალის ჩინივით გაუფრთხილდით :)) Active Directory გარემოში არსებობს უამრავი გზები თუ როგორ შეინარჩუნოს შემტევმა პირმა წვდომა მას შემდეგ რაც მოიპოვებს წვდომას DA (Domain Admin) ან EA (Enterprise Admin) - ზე. თუკი მოხდება შემტევი პირის მიერ დომეინის “გაწევა” და თუკი კარგად გათვიცნობიერებულია, ძალიან რთულია ე.წ backdoor - ების ამოღება/განეიტრალება მათი სავარაუდო რაოდენობიდან გამომდინარე.&#xA;Domain Persistence იქნება პოსტების ციკლი, რომელიც მიეძღვნება ამ თემას. ეს პირველი ნაწილია და ამ ნაწილში შემოგთავაზებთ შემდეგ Persistence მეთოდებს:</description>
     </item>
     <item>
       <title>Forest Compromise - Forging IR-TGT Tickets (1 ნაწილი)</title>
-      <link>https://higgsx.github.io/ka/posts/attacking-forest/</link>
+      <link>https://redsecx.com/ka/posts/attacking-forest/</link>
       <pubDate>Mon, 05 Jun 2023 01:38:06 +0400</pubDate>
-      <guid>https://higgsx.github.io/ka/posts/attacking-forest/</guid>
-      <description>&lt;p&gt;&lt;img alt=&#34;Untitled&#34; src=&#34;https://higgsx.github.io/images/forest/main-logo.jpg&#34;&gt;&lt;/p&gt;&#xA;&lt;pre tabindex=&#34;0&#34;&gt;&lt;code&gt;“კაცი, რომ Domain Admin იქნება, ის Enterprise Admin - იც გახდებაო”&#xA;    &#xA;    -   ნათქვამია ნერდულ ანდაზაში.&#xA;&lt;/code&gt;&lt;/pre&gt;&lt;h2 id=&#34;0x00-შესავალი&#34;&gt;[0x00] შესავალი&lt;/h2&gt;&#xA;&lt;p&gt;მიჩნეულია, რომ &lt;strong&gt;Active Directory&lt;/strong&gt; გარემოში, 1 forest - ში არსებული ნებისმიერი დომეინზე ჰაკერის მიერ მოპოვებული Domain Admin წვდომა მხოლოდ ვრცელდება იმ კონკრეტულ დომეინზე, რაც შეცდომაა. მნიშვნელობა არ აქვს რამდენად ჩაშლილი სტრუქტურაა, მაგალითად &lt;strong&gt;grandgrandchild.grandchild.child.redefense.local&lt;/strong&gt; დომეინის კომპრომიზირების შემთხვევაში მთლიანად &lt;strong&gt;redefense.local&lt;/strong&gt; არის “გაწეული”. რადგანაც ფორესტში დომეინებს შორის არის ყოველთვის 2 მხრივი ტრანზიტული ნდობა (2 way implicit transitive trust).&lt;/p&gt;</description>
+      <guid>https://redsecx.com/ka/posts/attacking-forest/</guid>
+      <description>&lt;p&gt;&lt;img alt=&#34;Untitled&#34; src=&#34;https://redsecx.com/images/forest/main-logo.jpg&#34;&gt;&lt;/p&gt;&#xA;&lt;pre tabindex=&#34;0&#34;&gt;&lt;code&gt;“კაცი, რომ Domain Admin იქნება, ის Enterprise Admin - იც გახდებაო”&#xA;    &#xA;    -   ნათქვამია ნერდულ ანდაზაში.&#xA;&lt;/code&gt;&lt;/pre&gt;&lt;h2 id=&#34;0x00-შესავალი&#34;&gt;[0x00] შესავალი&lt;/h2&gt;&#xA;&lt;p&gt;მიჩნეულია, რომ &lt;strong&gt;Active Directory&lt;/strong&gt; გარემოში, 1 forest - ში არსებული ნებისმიერი დომეინზე ჰაკერის მიერ მოპოვებული Domain Admin წვდომა მხოლოდ ვრცელდება იმ კონკრეტულ დომეინზე, რაც შეცდომაა. მნიშვნელობა არ აქვს რამდენად ჩაშლილი სტრუქტურაა, მაგალითად &lt;strong&gt;grandgrandchild.grandchild.child.redefense.local&lt;/strong&gt; დომეინის კომპრომიზირების შემთხვევაში მთლიანად &lt;strong&gt;redefense.local&lt;/strong&gt; არის “გაწეული”. რადგანაც ფორესტში დომეინებს შორის არის ყოველთვის 2 მხრივი ტრანზიტული ნდობა (2 way implicit transitive trust).&lt;/p&gt;</description>
     </item>
     <item>
       <title>AMSI In-Memory Patching</title>
-      <link>https://higgsx.github.io/ka/posts/amsi-inmemory-patching/</link>
+      <link>https://redsecx.com/ka/posts/amsi-inmemory-patching/</link>
       <pubDate>Tue, 07 Mar 2023 01:38:06 +0400</pubDate>
-      <guid>https://higgsx.github.io/ka/posts/amsi-inmemory-patching/</guid>
-      <description>&lt;p&gt;&lt;!-- raw HTML omitted --&gt;&lt;!-- raw HTML omitted --&gt;&lt;/p&gt;&#xA;&lt;p&gt;&lt;img alt=&#34;Untitled&#34; src=&#34;https://higgsx.github.io/images/amsi-1/amsi-arch.jpg&#34;&gt;&lt;/p&gt;&#xA;&lt;p&gt;&lt;strong&gt;AMSI&lt;/strong&gt; ანუ &lt;strong&gt;Anti Malware Scan Interface&lt;/strong&gt; არის Microsoft - ის მიერ შემუშავებული ტექნოლოგია, რომლის მიზანიც იყო და არის memory ში მავნე signature - ების დაფიქსირება და იგი პირველად გაჩნდა Windows 10 - ში. AMSI - ს შეუძლია შეანელოს &amp;ldquo;შემტევის&amp;rdquo; აქტივობები, თუმცა მასზე თავის არიდება არ არის რთული და დროის საკითხია.&lt;/p&gt;&#xA;&lt;p&gt;თქვენ, რომ დაგუგლოთ &lt;code&gt;amsi bypass&lt;/code&gt; ან &lt;code&gt;amsi evasion&lt;/code&gt;, უამრავ გამზადებულ “ქომანდებს” ნახავთ, რომელთა ნახევარი უბრალოდ არ იმუშავებს. მიზეზი კი ის არის, რომ ანტივირუსი, რომელიც სისტემაზე არის, მუდმივად განიცდის განახლებას და “მზა” ქომანდები სულაც არ არის ისეთ “მზამზარეული” როგორიც ერთი შეხედვით ჩანდა.&lt;/p&gt;</description>
+      <guid>https://redsecx.com/ka/posts/amsi-inmemory-patching/</guid>
+      <description>&lt;p&gt;&lt;!-- raw HTML omitted --&gt;&lt;!-- raw HTML omitted --&gt;&lt;/p&gt;&#xA;&lt;p&gt;&lt;img alt=&#34;Untitled&#34; src=&#34;https://redsecx.com/images/amsi-1/amsi-arch.jpg&#34;&gt;&lt;/p&gt;&#xA;&lt;p&gt;&lt;strong&gt;AMSI&lt;/strong&gt; ანუ &lt;strong&gt;Anti Malware Scan Interface&lt;/strong&gt; არის Microsoft - ის მიერ შემუშავებული ტექნოლოგია, რომლის მიზანიც იყო და არის memory ში მავნე signature - ების დაფიქსირება და იგი პირველად გაჩნდა Windows 10 - ში. AMSI - ს შეუძლია შეანელოს &amp;ldquo;შემტევის&amp;rdquo; აქტივობები, თუმცა მასზე თავის არიდება არ არის რთული და დროის საკითხია.&lt;/p&gt;&#xA;&lt;p&gt;თქვენ, რომ დაგუგლოთ &lt;code&gt;amsi bypass&lt;/code&gt; ან &lt;code&gt;amsi evasion&lt;/code&gt;, უამრავ გამზადებულ “ქომანდებს” ნახავთ, რომელთა ნახევარი უბრალოდ არ იმუშავებს. მიზეზი კი ის არის, რომ ანტივირუსი, რომელიც სისტემაზე არის, მუდმივად განიცდის განახლებას და “მზა” ქომანდები სულაც არ არის ისეთ “მზამზარეული” როგორიც ერთი შეხედვით ჩანდა.&lt;/p&gt;</description>
     </item>
   </channel>
 </rss>
