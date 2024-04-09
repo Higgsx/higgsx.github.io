@@ -1,4 +1,4 @@
-baseURL = "/"
+baseURL = "https://redsecx.com/"
 languageCode = "en-us"
 theme = "poison"
 paginate = 10
@@ -10,10 +10,10 @@ pluralizelisttitles = false   # removes the automatically appended "s" on sideba
 [languages]
 [languages.en]
     [params]
-        brand = "RedsecX"                      # name of your site - appears in the sidebar
+        brand = "Redsec"                      # name of your site - appears in the sidebar
         # remote_brand_image = 'https://github.com/USERNAME.png' # path to a remote file
         # brand_image = "/images/test.jpg"    # path to the image shown in the sidebar
-        description = "Blog on Penetration Test and Bug Hunting" # Used as default meta description if not specified in front matter
+        description = "Blog on Cyber Security" # Used as default meta description if not specified in front matter
         dark_mode = true                      # optional - defaults to false
         # favicon = "favicon.png"             # path to favicon (defaults to favicon.png)
 
@@ -32,18 +32,18 @@ pluralizelisttitles = false   # removes the automatically appended "s" on sideba
 
         # Links to your socials.  Comment or delete any you don't need/use. 
         #discord_url = "https://discord.com"
-        email_url = "mailto://user@domain"
+        email_url = "mailto://ltakashvili@protonmail.com"
         #facebook_url = "https://facebook.com"
         #flickr_url = "https://flickr.com"
-        #github_url = "https://github.com"
-        #gitlab_url = "https://gitlab.com"
+        #github_url = "https://github.com/Higgsx"
+        #gitlab_url = "https://github.com/Higgsx"
         #instagram_url = "https://instagram.com"
-        linkedin_url = "https://linkedin.com"
+        linkedin_url = "https://www.linkedin.com/in/lasha-takashvili/"
         #mastodon_url = "https://mastodon.social"
         #matrix_url = "https://matrix.org"
         #telegram_url = "https://telegram.org"
         tryhackme_url = "https://tryhackme.com"
-        twitter_url = "https://twitter.com"
+        twitter_url = "https://twitter.com/Higgs0x"
         #xmpp_url = "https://xmpp.org"
         #youtube_url = "https://youtube.com"
 
@@ -137,7 +137,7 @@ pluralizelisttitles = false   # removes the automatically appended "s" on sideba
         #matrix_url = "https://matrix.org"
         #telegram_url = "https://telegram.org"
         tryhackme_url = "https://tryhackme.com"
-        twitter_url = "https://twitter.com"
+        twitter_url = "https://twitter.com/Higgs0x"
         #xmpp_url = "https://xmpp.org"
         #youtube_url = "https://youtube.com"
 
