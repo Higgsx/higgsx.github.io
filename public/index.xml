@@ -9,39 +9,39 @@
     <lastBuildDate>Tue, 09 Apr 2024 09:50:51 -0400</lastBuildDate>
     <atom:link href="http://localhost:1313/index.xml" rel="self" type="application/rss+xml" />
     <item>
-      <title>Dancing with PEB: change CommandLine</title>
+      <title>Dancing with PEB: Change CommandLine</title>
       <link>http://localhost:1313/posts/change_cmdline_string/</link>
       <pubDate>Tue, 09 Apr 2024 09:50:51 -0400</pubDate>
       <guid>http://localhost:1313/posts/change_cmdline_string/</guid>
-      <description>I am taking Sektor7 Intermediate Malware Development training and as an exercise, I decided to create toy project which will go through all active processes and change their CommandLine parameter.&#xA;First of all lets have a look at PEB structure of notepad.exe process:&#xA;Here, we are mapping _PEB structure fields to actual PEB structure in memory&#xA;dt _PEB @$peb One of the structure field is ProcessParameters ProcessParameters is type of _RTL_USER_PROCESS_PARAMETERS and for our interests, we want CommandLine field CommandLine field is of type _UNICODE_STRING and contains 3 fields: Length, MaximumLength and Buffer Here, Buffer is unicode string and our objective is to change this to a unicode string we choose.</description>
+      <description>I am taking Sektor7 Intermediate Malware Development training and as an exercise, I decided to create toy project which will go through all active processes and change their CommandLine parameter.&#xA;First of all lets have a look at PEB structure of notepad.exe process:&#xA;Here, we are mapping _PEB structure fields to actual PEB structure in memory&#xA;dt _PEB @$peb One of the structure field is ProcessParameters&#xA;ProcessParameters is type of _RTL_USER_PROCESS_PARAMETERS and for our interests, we want CommandLine field</description>
     </item>
     <item>
-      <title>Dpapi Decryption</title>
-      <link>http://localhost:1313/posts/dpapi-decryption/</link>
-      <pubDate>Sat, 06 Apr 2024 11:15:32 -0400</pubDate>
-      <guid>http://localhost:1313/posts/dpapi-decryption/</guid>
-      <description>Introduction&#xA;DPAPI stands for Data Protection API and was introducted by microsoft in Windows 2000 and since then it is used heavily by windows even if you aren’t aware of it. Simply put, DPAPI lets you encrypt/decrypt data. You don’t need to worry about encryption keys at all.&#xA;DPAPI has 2 simple API:&#xA;CryptProtectData() CryptUnprotectData()&#xA;As you might already guessed it:&#xA;For encryption you use CryptProtectData()&#xA;For decryption you use CryptUnprotectData()</description>
-    </item>
-    <item>
-      <title>Crtp Review</title>
-      <link>http://localhost:1313/posts/crtp-review/</link>
-      <pubDate>Sat, 06 Apr 2024 10:53:10 -0400</pubDate>
-      <guid>http://localhost:1313/posts/crtp-review/</guid>
-      <description>Introduction&#xA;Before starting HackTheBox Offshore I needed some background on attacking Active Directory environment. I had had some sysadmin experience in AD and it was time to going through penetration testing course focused on Active Directory. I had already heard about PentesterAcademy training course (Attacking and Defending Active Directory) and didn’t spend time on searching much back then and immediately purchased this course which is accompanying training course for CRTP examination.</description>
-    </item>
-    <item>
-      <title>Backdoor Adminsdholder</title>
+      <title>Backdoor AdminSDHolder</title>
       <link>http://localhost:1313/posts/backdoor-adminsdholder/</link>
-      <pubDate>Sat, 06 Apr 2024 10:44:04 -0400</pubDate>
+      <pubDate>Mon, 06 Jun 2022 10:44:04 -0400</pubDate>
       <guid>http://localhost:1313/posts/backdoor-adminsdholder/</guid>
       <description>In a red team operation when we gain Domain Admin privileges, we want to make sure we will have access to the environment even though system administrators or blue teamers notice it. In Active Directory environment amount of TTPs (Techniques, Tactics, Procedures) for persistence is huge. One common way to persist is to use AdminSDHolder container, which is in System container&#xA;Every 60 minutes SDPropagator in AD, will overwrite Protected groups ACL with AdminSDHolder ACL.</description>
     </item>
     <item>
-      <title>Htb Offshore</title>
+      <title>HTB Prolab: Offshore</title>
       <link>http://localhost:1313/posts/htb-offshore/</link>
-      <pubDate>Sat, 06 Apr 2024 10:39:34 -0400</pubDate>
+      <pubDate>Wed, 06 Apr 2022 10:39:34 -0400</pubDate>
       <guid>http://localhost:1313/posts/htb-offshore/</guid>
       <description>Introduction&#xA;At the beginning, HackTheBox was platform known for just a single box exercises but it evolved a lot and become one of the best platform for honing your cyber security skills and tradecraft.&#xA;One of the best feature of this platform is its prolabs&#xA;Dante Offshore RastaLabs Cybernetics APTLabs Prolabs are huge labs composed of several domains and forests, spanned across different subnets and each one of them varies by difficulty and sizes.</description>
+    </item>
+    <item>
+      <title>DPAPI Decryption</title>
+      <link>http://localhost:1313/posts/dpapi-decryption/</link>
+      <pubDate>Tue, 01 Feb 2022 11:15:32 -0400</pubDate>
+      <guid>http://localhost:1313/posts/dpapi-decryption/</guid>
+      <description>Introduction DPAPI stands for Data Protection API and was introducted by microsoft in Windows 2000 and since then it is used heavily by windows even if you aren’t aware of it. Simply put, DPAPI lets you encrypt/decrypt data. You don’t need to worry about encryption keys at all.&#xA;DPAPI has 2 simple API:&#xA;CryptProtectData() CryptUnprotectData() As you might already guessed it:&#xA;For encryption you use CryptProtectData()&#xA;For decryption you use CryptUnprotectData()</description>
+    </item>
+    <item>
+      <title>CRTP Review</title>
+      <link>http://localhost:1313/posts/crtp-review/</link>
+      <pubDate>Fri, 05 Feb 2021 10:53:10 -0400</pubDate>
+      <guid>http://localhost:1313/posts/crtp-review/</guid>
+      <description>Introduction Before starting HackTheBox Offshore I needed some background on attacking Active Directory environment. I had had some sysadmin experience in AD and it was time to going through penetration testing course focused on Active Directory. I had already heard about PentesterAcademy training course (Attacking and Defending Active Directory) and didn’t spend time on searching much back then and immediately purchased this course which is accompanying training course for CRTP examination.</description>
     </item>
   </channel>
 </rss>

@@ -1,25 +1,26 @@
 +++
-title = 'Dpapi Decryption'
-date = 2024-04-06T11:15:32-04:00
+title = 'DPAPI Decryption'
+date = 2022-02-01T11:15:32-04:00
 draft = false
 +++
 
-Introduction
+## Introduction
 
 DPAPI stands for Data Protection API and was introducted by microsoft in Windows 2000 and since then it is used heavily by windows even if you aren’t aware of it. Simply put, DPAPI lets you encrypt/decrypt data. You don’t need to worry about encryption keys at all.
 
 DPAPI has 2 simple API:
-
+```
 CryptProtectData()
 CryptUnprotectData()
+```
 
 ![Untitled](/images/oldredsec/dpapi1.png)
 
 As you might already guessed it:
 
-For encryption you use CryptProtectData()
+For encryption you use `CryptProtectData()`
 
-For decryption you use CryptUnprotectData()
+For decryption you use `CryptUnprotectData()`
 
 Windows operating system takes care of everything. for encryption it uses your password hash when you are in local user context. Different story is when you are part of a Active Directory domain. This post will be about local user context.
 Credential Manager

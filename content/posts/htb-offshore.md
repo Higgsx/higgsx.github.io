@@ -1,6 +1,6 @@
 +++
-title = 'Htb Offshore'
-date = 2024-04-06T10:39:34-04:00
+title = 'HTB Prolab: Offshore'
+date = 2022-04-06T10:39:34-04:00
 draft = false
 +++
 Introduction
@@ -11,11 +11,11 @@ At the beginning, HackTheBox was platform known for just a single box exercises 
 
 One of the best feature of this platform is its prolabs
 
-    Dante
-    Offshore
-    RastaLabs
-    Cybernetics
-    APTLabs
+- Dante
+- Offshore
+- RastaLabs
+- Cybernetics
+- APTLabs
 
 Prolabs are huge labs composed of several domains and forests, spanned across different subnets and each one of them varies by difficulty and sizes.
 
@@ -25,22 +25,22 @@ HackTheBox offshore is one of the prolab which is focused mainly on Active Direc
 
 This lab covers following areas:
 
-    Lateral Movement between Domains/Forests
-    Active Directory attacks
-    Reverse Engineering
-    Local Privilege Escalation
-    A few CTF exercises
-    Web Application Attacks
+- Lateral Movement between Domains/Forests
+- Active Directory attacks
+- Reverse Engineering
+- Local Privilege Escalation
+- A few CTF exercises
+- Web Application Attacks
 
 Prerequisite
 
 This lab definitely requires some prerequisites such as:
 
-    Basic knowledge and hands-on experience of Active Directory
-    Basic working experience with Linux
-    Basic reading/writing coding skills
-    Web Application security
-    Basics of Networking
+- Basic knowledge and hands-on experience of Active Directory
+- Basic working experience with Linux
+- Basic reading/writing coding skills
+- Web Application security
+- Basics of Networking
 
 Active Directory
 
@@ -48,15 +48,15 @@ This is maybe the most important thing you have to know to succeed in this lab, 
 
 So what to do beforehand? there are several options
 
-    purchase online course on AD administration from let’s say Udemy, Pluralsight, CBT nuggets etc.
-    Build your own AD lab on your laptop, PC, on your dedicated servers or use cloud providers such as Azure and AWS. I personally recommend AWS.
+- purchase online course on AD administration from let’s say Udemy, Pluralsight, CBT nuggets etc.
+- Build your own AD lab on your laptop, PC, on your dedicated servers or use cloud providers such as Azure and AWS. I personally recommend AWS.
 
 Some training providers have capability to host labs on their platforms and you can practice there. For example CBT Nuggets have feature where when you are going through the course you can practice in lab provided. You are given windows machines and you can interact with them just through your browser, no additional hardware/software are necessary except simple web browser like Google Chrome, Edge etc.
 
 If you ask me you should do both
 
-    Build your own AD lab, create domains, forests and trusts between them, install MSSQL servers and etc…
-    And go through training providers' own lab and training courses
+- Build your own AD lab, create domains, forests and trusts between them, install MSSQL servers and etc…
+- And go through training providers' own lab and training courses
 
 You don’t need to be AD guru to do offshore, just basics will do fine and rest can be learned along the practice in offshore. Well, still it isn’t enough :)
 
@@ -72,11 +72,11 @@ PentesterAcademy’s CRTP training course is BEST and very well organized. I wil
 
 In short you will learn:
 
-    DCSync attack and why it works the way it works
-    DCShadow for persistence
-    Abusing ACLs
-    Abuse local service misconfigurations
-    Neat persistent tricks such as: AdminSDHolder, SeEnableDelegationPrivilege and so on.
+- DCSync attack and why it works the way it works
+- DCShadow for persistence
+- Abusing ACLs
+- Abuse local service misconfigurations
+- Neat persistent tricks such as: AdminSDHolder, SeEnableDelegationPrivilege and so on.
 
 Coding skills
 
@@ -92,7 +92,7 @@ During your lab time you definitely have to pivot through different domains. Eve
 
 You should also have basic knowledge of networking such as IP addresses, subnets, default gateways, MACs, TCP/UDP, ICMP and etc..
 
-You don’t need to be CCNA certified but should have some basics. Even half of Network+is enough
+You don’t need to be CCNA certified but should have some basics. Even half of Network+ is enough
 How to succeed?
 
     It is time consuming. No easy wins. Almost everything is patched. make sure you have time, 2-3 hours per day
@@ -107,9 +107,7 @@ I didn’t know anything about AD. Bought some training courses on Active Direct
 If you are interested which training courses I took
 
     Windows Server 2019 AD and GPOs
-
     AD Group Policies
-
     Server Academy
 
 2nd month prior to purchasing offshore

@@ -1,5 +1,5 @@
 +++
-title = 'Dancing with PEB: change CommandLine'
+title = 'Dancing with PEB: Change CommandLine'
 date = 2024-04-09T09:50:51-04:00
 draft = false
 +++
@@ -14,19 +14,22 @@ Here, we are mapping _PEB structure fields to actual PEB structure in memory
 dt _PEB @$peb
 ```
 One of the structure field is ProcessParameters
-![Untitled](/images/peb-images/1.png)
+
+![Untitled](/images/peb-images/2.png)
 
 
 ProcessParameters is type of `_RTL_USER_PROCESS_PARAMETERS` and for our interests, we want CommandLine field
+
 ![Untitled](/images/peb-images/3.png)
 
 CommandLine field is of type `_UNICODE_STRING` and contains 3 fields: `Length`, `MaximumLength` and `Buffer`
+
 ![Untitled](/images/peb-images/4.png)
 
 Here, Buffer is unicode string and our objective is to change this to a unicode string we choose.
 
 
-code in a github is explained well, but lets sneak peek
+code in a github is explained well with comments, but lets sneak peek
 
 Here, we get a handle to remote process via `OpenProcess` WinAPI and request for `PROCESS_ALL_ACCESS`
 
@@ -73,6 +76,7 @@ cl.exe /nologo /Ox /MT /W0 /GS- /DNDEBUG /Tp *.cpp /link /OUT:implant.exe /SUBSY
 Errors shown above is about permissions, we are getting because we don't have necessary process token (we are just regular user). In case you want to overwrite most of the process, just run as administrator or spawn cmd.exe via psexec
 
 Here we see overwritten commandlines of several processes shown via Process Hacker
+
 ![Untitled](/images/peb-images/8.png)
 
 

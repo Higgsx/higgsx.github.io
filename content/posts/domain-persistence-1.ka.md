@@ -1,6 +1,6 @@
 +++
-title = 'Domain Persistence 1'
-date = 2024-04-06T09:34:15-04:00
+title = 'Domain Persistence Part 1'
+date = 2023-04-06T09:34:15-04:00
 draft = false
 +++
 ![Untitled](/images/persistence-one/ad-logo.png)

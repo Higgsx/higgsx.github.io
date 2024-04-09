@@ -1,41 +1,44 @@
 +++
-title = 'Crtp Review'
-date = 2024-04-06T10:53:10-04:00
+title = 'CRTP Review'
+date = 2021-02-05T10:53:10-04:00
 draft = false
 +++
 
-Introduction
+## Introduction
 
 Before starting HackTheBox Offshore I needed some background on attacking Active Directory environment. I had had some sysadmin experience in AD and it was time to going through penetration testing course focused on Active Directory. I had already heard about PentesterAcademy training course (Attacking and Defending Active Directory) and didn’t spend time on searching much back then and immediately purchased this course which is accompanying training course for CRTP examination.
 
 activedirectorylab
-TL;DR
 
+TL;DR
+```
 Yes! it’s great training course, get it.
-Course Content
+```
+
+## Course Content
 
 When you purchase the course, you are given following:
 
-    Presentation slides in a PDF format, about 350 slides
-    37 Video recordings including lab walkthroughs. Each about 25-30 minutes
-    Lab manual with detailed walkthrough in PDF format
-    (Unofficial) Discord channel dedicated to students of CRTP
-    Lab with multiple forests and multiple domains
+- Presentation slides in a PDF format, about 350 slides
+- 37 Video recordings including lab walkthroughs. Each about 25-30 minutes
+- Lab manual with detailed walkthrough in PDF format
+- (Unofficial) Discord channel dedicated to students of CRTP
+- Lab with multiple forests and multiple domains
 
 Attacking and Defending Active Directory course is about as its name suggests attack vectors against AD and what mitigation steps exists to defend it. For instance, if course instructor (Nikhil) covers let’s say kerberoasting, he always includes prevention and mitigation steps with very detailed explanation.
 
 It covers
 
-    Local Privilege Enumeration (but in very small amount, which is understandable. LPE is whole another topic)
-    Domain Privilege enumeration
-    Abuse domain and forest trusts
-    AD Domain enumeration with 2 tools: PowerView and MS AD Module
-    Heavy mimikatz, kekeo and Rubeus usage
-    DCSync, DCShadow, Forging Golden, Silver and Inter-Realm TGTs for abusing cross domain trusts
-    Persistence approaches: Scheduled Tasks, AdminSDHolders, abusing ACL of domain objects and etc.
-    Contrained and Unconstrained delegation abuse
-    Ways to bypass Constrained Language Mode (CLM)
-    etc
+- Local Privilege Enumeration (but in very small amount, which is understandable. LPE is whole another topic)
+- Domain Privilege enumeration
+- Abuse domain and forest trusts
+- AD Domain enumeration with 2 tools: PowerView and MS AD Module
+- Heavy mimikatz, kekeo and Rubeus usage
+- DCSync, DCShadow, Forging Golden, Silver and Inter-Realm TGTs for abusing cross domain trusts
+- Persistence approaches: Scheduled Tasks, AdminSDHolders, abusing ACL of domain objects and etc.
+- Contrained and Unconstrained delegation abuse
+- Ways to bypass Constrained Language Mode (CLM)
+- etc
 
 As I’ve already said when attack approach is introduced, there is always defense methodologies and Nikhil does explain that very well. So, it would be awesome course not only for red teamers but also for blue teams. Not only defense but also Nikhil discusses few detection ways such as: Honey(decoy) service accounts, Microsoft ATA (Advanced Threat Analytics) and etc.
 
@@ -54,8 +57,8 @@ You have options of lab packages: 30/60/90 days. If you have some background and
 
 You will not have CVEs at all. Everything you abuse will be feautures and misconfigurations of windows. Don’t download CVE exploits! OSCP have no power here.
 
-oscp
-Exam
+
+## Exam
 
 Exam is not hard as long as you know everything taught in the course. It will not include anything that isn’t in the course. If you want success, make sure you master everything you already learned. Don’t just remember tool commands like arguments, make sure you have reasonable explanations as to why this tool worked and why not. Master more than one tool, e.g if you mastered PowerView, make sure you master ADModule as well. It is good practice not only for this exam but in general. Sometimes tools just don’t work and you have to find a way.
 
